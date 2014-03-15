@@ -1,4 +1,5 @@
-![InSideOut10 logo](https://github.com/insideout10/logo-generator/raw/master/images/logo-0018.png)
+![InSideOut10 logo](https://github.com/cyberandy/sphere-IO-Today/raw/master/insideout.today.png)
+
 
 
 ## sphere-IO-Today Logo Generator - Overview
