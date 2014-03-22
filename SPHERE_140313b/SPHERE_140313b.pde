@@ -26,11 +26,11 @@ int num;
 float pt[];
 int style[];
 
-int res = 3;
-boolean isWireFrame = true;
+int res = 20;
+boolean isWireFrame = false;
 int bgcolor = 255;
 
-int intNum = 100;   // Sets the number of flying elements
+int intNum = 15;   // Sets the number of flying elements
 
 float rx = 0;
 float ry = 0;
@@ -40,6 +40,7 @@ void setup() {
   size(1024, 768, P3D);
   background(255);
   
+
   // Fill the tables
   sinLUT=new float[SINCOS_LENGTH];
   cosLUT=new float[SINCOS_LENGTH];
@@ -79,13 +80,13 @@ void setup() {
     if(prob<30) style[i*2]=color(colorlist_[0],colorlist_[1],colorlist_[2]);
     else if(prob<70) style[i*2]=color(colorlist_[0],colorlist_[1],colorlist_[2]);
     else if(prob<90) style[i*2]=color(colorlist_[0],colorlist_[1],colorlist_[2]);
-    else style[i*2]=color(255,255,255, 255);
+    else style[i*2]=color(0,0,0, 0);
 
     if(prob<50) style[i*2]=color(colorlist_[0],colorlist_[1],colorlist_[2]);
     else if(prob<90) style[i*2]=color(colorlist_[0],colorlist_[1],colorlist_[2]);
     
     
-    else style[i*2]=color(255,255,255, 255);
+    else style[i*2]=color(#F71E84);
 
     style[i*2+1]=(int)(random(100))%3;
   }
@@ -95,20 +96,21 @@ void draw() {
  
   background(bgcolor);
  
+ 
   int index=0;
   translate(width/2, height/2, 0);
   rotateX(PI/6);
   rotateY(PI/6);
   
+  
   for (int i = 0; i < num; i++) {
-    
+
     pushMatrix();
  
     rotateX(pt[index++]);
     rotateY(pt[index++]);
-    
-    lights();
 
+    
     strokeWeight(.5);
 
     // Set up the central Sphere    
@@ -117,7 +119,8 @@ void draw() {
         noFill();
           } 
     else {
-        fill(#F71E84);
+        fill(#F71E84); // PINK
+        //fill(#8FD22A); // GREEN
                 }
     sphereDetail(res);
     sphere(radius);
@@ -127,13 +130,13 @@ void draw() {
     if(style[i*2+1]==0) {
       stroke(style[i*2]);
       noFill();
-      strokeWeight(1);
-      arcLine(50,50, pt[index++],pt[index++],pt[index++]);
+      strokeWeight(2);
+      arcLineBars(50,50, pt[index++],pt[index++],pt[index++]);
     }
     else if(style[i*2+1]==1) {
       fill(style[i*2]);
       noStroke();
-      arcLineBars(50,50, pt[index++],pt[index++],pt[index++]);
+      arc(50,50, pt[index++],pt[index++],pt[index++]);
     }
     else {
       fill(style[i*2]);
@@ -141,6 +144,7 @@ void draw() {
       arc(50,50, pt[index++],pt[index++],pt[index++]);
     }
  
+   
     // increase rotation
     pt[index-5]+=pt[index]/10;
     pt[index-4]+=pt[index++]/20;
@@ -176,20 +180,6 @@ int[] colorBlended() {
   int[] colorlist_ = int(colors);
   return colorlist_;  
  }
-// Draw arc line
-void arcLine(float x,float y,float deg,float rad,float w) {
-  int a=(int)(min (deg/SINCOS_PRECISION,SINCOS_LENGTH-1));
-  int numlines=(int)(w/2);
- 
-  for (int j=0; j<numlines; j++) {
-    beginShape();
-    for (int i=0; i<a; i++) { 
-      vertex(cosLUT[i]*rad+x,sinLUT[i]*rad+y);
-    }
-    endShape();
-    rad += 2;
-  }
-}
  
 // Draw arc line with bars
 void arcLineBars(float x,float y,float deg,float rad,float w) {
@@ -227,10 +217,9 @@ int[] chooseRandomColor() {
   colors[2] = "249,248,30";
   colors[3] = "143,210,42";
   colors[4] = "100,41,148";
-  colors[5] = "255,255,255";
-  colors[6] = "0,0,0";
+  colors[5] = "0,0,0";
   
-  float q = random(7);
+  float q = random(6);
   int c = int(q);
   String[] colorlist = split(colors[c], ','); 
   int[] colorlist_ = int(colorlist);
