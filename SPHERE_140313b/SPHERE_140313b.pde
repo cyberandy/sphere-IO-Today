@@ -120,8 +120,8 @@ void draw() {
           } 
     else {
         noStroke();
-        fill(#F71E84); // PINK
-        //fill(#8FD22A); // GREEN
+        //fill(#F71E84); // PINK
+        fill(#8FD22A); // GREEN
                 }
     sphereDetail(res);
     sphere(radius);
