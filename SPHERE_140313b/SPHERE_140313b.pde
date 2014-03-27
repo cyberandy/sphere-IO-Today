@@ -7,7 +7,7 @@
  *   'b' Background White/Black
  *   'UP' Sphere resolution up
  *   'DOWN' Sphere resolution down
- *   'RIGHT' Sphere size grow
+ *   'RIGHT' Sphere size up
  *   'LEFT' Sphere size down
  * 
  * Using sin/cos lookup tables, blends colors, and draws a series of 
@@ -119,6 +119,7 @@ void draw() {
         noFill();
           } 
     else {
+        noStroke();
         fill(#F71E84); // PINK
         //fill(#8FD22A); // GREEN
                 }
