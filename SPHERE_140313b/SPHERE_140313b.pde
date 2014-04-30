@@ -1,5 +1,6 @@
 /**
- * Original Geometry by Marius Watz revised by CyberAndy for IO10
+ * Code by CyberAndy for Insideout.Today 
+ * original geometry by Marius Watz 
  *   
  * KEYBOARD COMMANDS:
  * 
