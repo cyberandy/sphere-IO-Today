@@ -31,9 +31,10 @@ Please use GitHub to report issues: [https://github.com/insideout10/logo-generat
 
 We would like to thank its contributors and supporters:
 
-* The [InSideOut10 team](http://www.insideout.io).
-* [Insideout Today](http://insideout.today) our sister company in Egypt.
-* Anyone sharing with us his/her enthusiasm for open innovation.
+* The [InSideOut10 team](http://www.insideout.io),
+* [Insideout Today](http://insideout.today) our sister company in Egypt,
+* Our families, clients and partners, 
+* Anyone sharing with us his/her enthusiasm for **open innovation**.
 
 
 ## License
