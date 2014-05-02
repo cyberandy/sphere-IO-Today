@@ -4,7 +4,7 @@
 
 ## logo-generator-Insideout-Today - Overview
 
-Welcome to **InSideOut.Today Logo Generator**, a simple sketch developed with [Processing](http://processing.org/) representing our company identity.
+Welcome to **InSideOut.Today Logo Generator**, a simple sketch developed with [Processing](http://processing.org/) representing the identity of Insideout Today (our sister company in Egypt).
 
 
 ### Announcements
@@ -23,7 +23,7 @@ Images will be created in the sketch folder by uncommenting line 154 ('saveFrame
 
 ### How to report issues
 
-Please use GitHub to report issues: [https://github.com/cyberandy/InSideOut10-Logo/issues](https://github.com/cyberandy/InSideOut10-Logo/issues).
+Please use GitHub to report issues: [https://github.com/insideout10/logo-generator-Insideout-Today/issues](https://github.com/insideout10/logo-generator-Insideout-Today/issues).
 
 ### Special thanks and contributors
 
@@ -32,7 +32,7 @@ Please use GitHub to report issues: [https://github.com/cyberandy/InSideOut10-Lo
 We would like to thank its contributors and supporters:
 
 * The [InSideOut10 team](http://www.insideout.io).
-* [Interact Egypt](http://www.interactegypt.me) our sister company.
+* [Insideout Today](http://insideout.today) our sister company in Egypt.
 * Anyone sharing with us his/her enthusiasm for open innovation.
 
 
