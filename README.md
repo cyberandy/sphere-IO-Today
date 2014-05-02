@@ -2,7 +2,7 @@
 
 
 
-## sphere-IO-Today Logo Generator - Overview
+## logo-generator-Insideout-Today - Overview
 
 Welcome to **InSideOut.Today Logo Generator**, a simple sketch developed with [Processing](http://processing.org/) representing our company identity.
 
