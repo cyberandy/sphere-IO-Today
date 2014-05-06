@@ -1,6 +1,3 @@
-![InSideOut10 logo](https://github.com/cyberandy/sphere-IO-Today/raw/master/insideout.today.png)
-
-
 
 ## logo-generator-Insideout-Today - Overview
 
