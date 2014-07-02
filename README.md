@@ -15,8 +15,15 @@ Requires processing 2.0 or later.
 
 ### How to use it
 
-Simply run the sketch and use the keyboards commands to change its characteristics 
+Simply run the sketch and use the _keyboards commands_ below to change its behaviours.  
 Images will be created in the sketch folder by uncommenting line 154 ('saveFrame("IOTODAY-frames/####.tga")') 
+
+ *   'w' Wireframe YES/NO
+ *   'b' Background White/Black
+ *   'UP' Sphere resolution up
+ *   'DOWN' Sphere resolution down
+ *   'RIGHT' Sphere size up
+ *   'LEFT' Sphere size down
 
 ### How to report issues
 
